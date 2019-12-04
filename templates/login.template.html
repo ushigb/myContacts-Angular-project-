@@ -1,0 +1,32 @@
+<form id="login" action="login.php" method="post" onSubmit="{
+            this.validateLogin();
+        }">
+    <div class="contacts-container">
+
+        <div class="login-container">
+            <div ng-if="!$ctrl.isLoggedIn">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Username:</label>
+                        <input type="text" name="username" class="form-control" ng-model="$ctrl.username">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Password:</label>
+                        <input type="password" name="password" class="form-control" autocomplete="password" ng-model="$ctrl.password">
+                    </div>
+                </div>
+                <div class="error" ng-if="$ctrl.error !== ''">{{$ctrl.error}}</div>
+                <div class="row">
+                    <div class="col-md-12 login-button">
+                        <button type="button" class="btn btn-primary" ng-click="$ctrl.login($ctrl.username, $ctrl.password)">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <contacts ng-if="$ctrl.isLoggedIn"></contacts>
+    </div></form>

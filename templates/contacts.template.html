@@ -1,0 +1,69 @@
+<div class="contacts-container contacts">
+    <div class="row">
+        <div class="col-sm-4" ng-if="!$ctrl.showEditor"><h5>Search:</h5><input class="form-control" ng-model="$ctrl.query" /></div>
+        
+       
+    </div>
+    <br />
+
+    <div ng-if="$ctrl.singleContact === '' && !$ctrl.showEditor">
+        <div class="row contact-header-row">
+            <div class="col-md-3 contact-header">Name</div>
+            <div class="col-md-3 contact-header">Phone</div>
+            <div class="col-md-4 contact-header">Email</div>
+            <div class="col-md-2 contact-header">Action</div>
+        </div>
+        <div class="row" ng-repeat="contact in $ctrl.contacts  | filter:$ctrl.query ">
+            <div class="col-sm-3 contact-title">
+                {{contact.name}}
+            </div>
+            <div class="col-sm-3 " >
+                {{contact.phone}}
+            </div>
+            <div class="col-sm-4 " >
+                {{contact.email}}
+            </div>
+            <div class="col-sm-1 contact-action" ng-click="$ctrl.deleteContact(contact.id)">
+                <i class="fa fa-times contact-delete" aria-hidden="true" ></i>
+            </div>
+            <div class="col-sm-1 contact-action" ng-click="$ctrl.editContact(contact.id)">
+                <i class="fa fa-pencil-square-o contact-edit" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div ng-if="$ctrl.singleContact !== ''" class="contact-text">
+        {{$ctrl.singleContact}}
+    </div>
+
+    <div class="editor" ng-if="$ctrl.showEditor">
+        <div class="row">
+            <div class="col-sm-12">
+                <label>Name:</label>
+                <input type="text" name="name" class="form-control" ng-model="$ctrl.Name" />
+            </div>
+        </div>
+       <div class="row">
+            <div class="col-sm-12">
+                <label>Phone:</label>
+                <input type="text" name="phone" class="form-control" ng-model="$ctrl.Phone" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <label>Email:</label>
+                <input type="text" name="email" class="form-control" ng-model="$ctrl.Email" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 new-contact-button">
+                <button type="button" class="btn btn-info" ng-click="$ctrl.save($ctrl.Name, $ctrl.Phone, $ctrl.Email)">Save Contact</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2 get-contacts-button">
+            <button type="button" class="btn btn-success" ng-click="$ctrl.getContacts()">Get Contacts</button>
+        </div>
+        <div class="col-sm-2 new-contact-button" ng-if="!$ctrl.showEditor">
+            <button type="button" class="btn btn-info" ng-click="$ctrl.newContact()">New Contact</button>
+        </div>
+</div>

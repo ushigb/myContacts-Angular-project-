@@ -1,0 +1,117 @@
+body{
+    background: #c2d6d6;
+
+}
+
+footer{
+    background: #cccccc;
+}
+
+.leftlogo{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.rightlogo{
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.head{
+    margin: 15px 0 10px 8px;
+    padding-bottom: 50px;
+
+
+}
+
+.title{
+    margin-top: 35px;
+
+}
+
+.rounded-pill{
+    margin-block-end: auto;
+    background: bisque;
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login-container {
+    width: 30%;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.logout-container {
+    width: 30%;
+    text-align: left;
+    margin-left: 70%;
+    margin-top: -10%;
+}
+
+.login-button {
+    margin-top: 10px;
+}
+
+.contacts-container{
+
+    background: bisque;    
+    padding-bottom: 25px ;
+    padding-left: 8px;
+
+}
+
+.get-contacts-button {
+    padding-top: 25px;
+    text-align: right;
+}
+
+.new-contact-button {
+    padding-top: 25px;
+}
+
+.contact-header {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contact-header-row {
+    border-bottom: 1px solid #f5f5f0;
+    margin-bottom: 20px;
+        margin-right: auto;
+}
+
+.contact-text {
+    font-size: 13px;
+    margin: 25px;
+}
+
+.contact-delete {
+    font-size: 20px;
+}
+
+.contact-delete:hover {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.contact-edit{
+    font-size: 20px;
+}
+
+.contact-edit:hover{
+    font-size: 20px;
+    color: #00ff00;
+    cursor: pointer;
+}
+
+.error {
+    font-size: 13px;
+    color: red;
+}
