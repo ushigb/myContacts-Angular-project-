@@ -1,6 +1,5 @@
 body{
     background: #c2d6d6;
-
 }
 
 footer{
@@ -17,21 +16,16 @@ footer{
     text-align: center;
 }
 
-
 .head{
     margin: 15px 0 10px 8px;
     padding-bottom: 50px;
-
-
 }
 
 .title{
     margin-top: 35px;
-
 }
 
-.rounded-pill{
-    margin-block-end: auto;
+.rounded-pill{    
     background: bisque;
     text-align: center;
     font-family: fantasy;
@@ -59,11 +53,9 @@ footer{
 }
 
 .contacts-container{
-
     background: bisque;    
     padding-bottom: 25px ;
     padding-left: 8px;
-
 }
 
 .get-contacts-button {
@@ -83,7 +75,7 @@ footer{
 .contact-header-row {
     border-bottom: 1px solid #f5f5f0;
     margin-bottom: 20px;
-        margin-right: auto;
+    margin-right: auto;
 }
 
 .contact-text {
@@ -101,6 +93,12 @@ footer{
     cursor: pointer;
 }
 
+.contact-update:hover {
+    font-size: 20px;
+    color: greenyellow;
+    cursor: pointer;
+}
+
 .contact-edit{
     font-size: 20px;
 }
@@ -109,6 +107,10 @@ footer{
     font-size: 20px;
     color: #00ff00;
     cursor: pointer;
+}
+
+.btn-success{
+    margin-bottom: 5px;
 }
 
 .error {

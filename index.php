@@ -14,25 +14,21 @@
         <script src="jsServices/contacts.service.js"></script>
         <script src="jsServices/login.service.js"></script>
         <script src="components/login.component.js"></script>
-        <script src="components/contacts.component.js"></script>
-        <script src="js/dateTime.js" type="text/javascript"></script>
+        <script src="components/contacts.component.js"></script>        
         <link rel="stylesheet" href="style/style.css?v=<?= time(); ?>">       
     </head>
     <body>
-        
-            <div class="row head">
-                <div class="col-md-4 rounded">
-                    <img src="img/logo.jpg" style="max-height: 150px">                    
-                </div>
-                <div class="col-md-4 rounded-pill" >
-                    <h1 class="title">My Contacts</h1>
-                </div>
-                
+        <div class="row head">
+            <div class="col-md-4 rounded">
+                <img src="img/logo.jpg" style="max-height: 150px">                    
+            </div>
+            <div class="col-md-4 rounded-pill" >
+                <h1 class="title">My Contacts</h1>
+            </div>
         </div>
-        
         <div ng-app="contactsApp">            
             <div class="container log">
-                 
+
                 <login></login>
             </div>                  
         </div>
@@ -42,7 +38,7 @@
                     <img src="img/logo.jpg" style="max-height: 100px">                    
                 </div>
                 <div class="col-md-4 rounded">
-                                        
+
                 </div>
                 <div class="col-md-4 rightlogo rounded">
                     <img src="img/logo.jpg" style="max-height: 100px">                    
@@ -50,6 +46,4 @@
             </div>
         </footer>
     </body>
-    
-    
 </html>

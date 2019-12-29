@@ -3,7 +3,6 @@
 //require_once "services/database.php";
 require_once "boot.php";
 
-
 $db = new Database();
 $conn = $db->getDB();
 
@@ -48,6 +47,9 @@ function login() {
     }
 
     $_SESSION['user'] = $result;
+    print_r($_SESSION);
+    die();
+
     return http_response_code(200);
 }
 
@@ -68,5 +70,3 @@ function getUser() {
     }
     return json_encode([]);
 }
-
-

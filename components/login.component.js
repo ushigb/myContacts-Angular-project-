@@ -5,12 +5,10 @@ contactsApp.
                 let self = this;
                 self.user = {};
                 self.error = '';
-
                 self.isLoggedIn = false;
                 self.getUser = function () {
                     loginService.getUser().then(function (response) {
                         console.log(response);
-
                         if (response.data !== undefined && response.data.length > 0) {
                             self.isLoggedIn = true;
                             self.user = response.data[0];
@@ -19,6 +17,7 @@ contactsApp.
                     });
                 };
 
+//                self.getUser();
 
                 self.login = function (username, password) {
                     console.log(username, password);

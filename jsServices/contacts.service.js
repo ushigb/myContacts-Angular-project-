@@ -17,11 +17,6 @@ contactsApp.service('contactsService', function ($http) {
         if (confirmed) {
             return $http.delete("http://mycontacts.test/contacts.php?id=" + contact_id);
         }
-
         return false;
-    };
-
-    self.editContact = function (contact_id) {
-        return $http.edit("http://mycontacts.test/contacts.php?id=" + contact_id);
-    };
+    };   
 });

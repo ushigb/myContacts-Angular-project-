@@ -2,10 +2,8 @@
             this.validateLogin();
         }">
     <div class="contacts-container">
-
         <div class="login-container">
             <div ng-if="!$ctrl.isLoggedIn">
-
                 <div class="row">
                     <div class="col-md-12">
                         <label>Username:</label>
@@ -26,7 +24,6 @@
                 </div>
             </div>
         </div>
-        
-
         <contacts ng-if="$ctrl.isLoggedIn"></contacts>
-    </div></form>
+    </div>
+</form>

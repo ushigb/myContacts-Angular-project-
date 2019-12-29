@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/xampp1/htdocs/MyContacts/templates/login.template.html</file>
-            <file>file:/D:/xampp1/htdocs/MyContacts/login.php</file>
-            <file>file:/D:/xampp1/htdocs/MyContacts/templates/contacts.template.html</file>
-            <file>file:/D:/xampp1/htdocs/MyContacts/jsServices/user.service.js</file>
-            <file>file:/D:/xampp1/htdocs/MyContacts/jsServices/contacts.service.js</file>
-            <file>file:/D:/xampp1/htdocs/MyContacts/jsServices/login.service.js</file>
-            <file>file:/D:/xampp1/htdocs/MyContacts/boot.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
