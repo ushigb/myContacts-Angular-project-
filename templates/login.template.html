@@ -23,7 +23,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>   
         <contacts ng-if="$ctrl.isLoggedIn"></contacts>
+        <div ng-if="$ctrl.isLoggedIn" class="logout-container" >            
+            <div><a href="#" ng-click="$ctrl.logOut()">Logout</a></div>
+        </div>
     </div>
 </form>

@@ -1,11 +1,7 @@
 <?php
 
-//require_once "services/database.php";
 require_once "boot.php";
 $request_method = $_SERVER['REQUEST_METHOD'];
-$query = $_SERVER['QUERY_STRING'];
-//$query_array = explode("&", $query);
-//$user = '';
 
 $contactsController = new ContactsController();
 $contacts = [];

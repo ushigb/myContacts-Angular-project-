@@ -41,11 +41,9 @@ footer{
     margin-top: 5%;
 }
 
-.logout-container {
-    width: 30%;
-    text-align: left;
-    margin-left: 70%;
-    margin-top: -10%;
+.logout-container a {
+    margin-left: 25px;
+    color: #eb4034;
 }
 
 .login-button {

@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/xampp1/htdocs/MyContacts/login.php</file>
+            <file>file:/D:/xampp1/htdocs/MyContacts/components/login.component.js</file>
+            <file>file:/D:/xampp1/htdocs/MyContacts/templates/contacts.template.html</file>
+            <file>file:/D:/xampp1/htdocs/MyContacts/contacts.php</file>
+        </group>
     </open-files>
 </project-private>

@@ -17,7 +17,7 @@ contactsApp.
                     });
                 };
 
-//                self.getUser();
+                self.getUser();
 
                 self.login = function (username, password) {
                     console.log(username, password);
@@ -35,13 +35,11 @@ contactsApp.
                         console.log(response);
                         if (response.status === 200) {
                             self.getUser();
-                            console.log(self.getUser());
                             self.isLoggedIn = true;
                             self.error = '';
                         } else {
                             self.error = 'Unable to login';
                         }
-
                     }, function (error) {
                         console.log(error);
                         self.error = 'Unable to login. ' + error.statusText;
@@ -49,7 +47,7 @@ contactsApp.
                 };
 
                 self.logOut = function () {
-                    loginService.logOut.then(function (response) {
+                    loginService.logOut().then(function (response) {
                         console.log(response);
                         if (response.status === 200) {
                             self.isLoggedIn = false;

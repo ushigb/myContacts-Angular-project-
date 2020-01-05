@@ -47,7 +47,8 @@ function login() {
     }
 
     $_SESSION['user'] = $result;
-    print_r($_SESSION);
+    
+    var_dump($_SESSION);
     die();
 
     return http_response_code(200);
